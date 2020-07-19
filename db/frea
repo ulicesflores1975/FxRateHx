@@ -1,0 +1,87 @@
+// SwissRe
+@column					swiss_re_percent						BigDecimal				"SwissRe Pct"						"0.00%"			optional
+@column					sw_costs_reconciled_ip					BigDecimal				"SwissRe Indemnity paid IP"			"#,##0.00"		optional
+@column					sw_costs_reconciled_td					BigDecimal				"SwissRe Indemnity paid TD"			"#,##0.00"		optional
+@column					sw_fees_reconciled_ip					BigDecimal				"SwissRe Fees paid IP"				"#,##0.00"		optional
+@column					sw_fees_reconciled_td					BigDecimal				"SwissRe Fees paid TD"				"#,##0.00"		optional
+@column					sw_recoveries_ip						BigDecimal				"SwissRe Recoveries IP"				"#,##0.00"		optional
+@column					sw_recoveries_td						BigDecimal				"SwissRe Recoveries TD"				"#,##0.00"		optional
+@column					sw_outstanding_costs_reserved_td		BigDecimal				"SwissRe Indemnity reserve TD"		"#,##0.00"		optional
+@column					sw_outstanding_fees_reserved_td			BigDecimal				"SwissRe Fee reserve TD"			"#,##0.00"		optional
+@column					sw_outstanding_recovery_reserves_td		BigDecimal				"SwissRe Recovery reserve TD"		"#,##0.00"		optional
+@column					sw_total_td								BigDecimal				"SwissRe Incurred cost"				"#,##0.00"		optional
+@column					sw_total_costs_movement					BigDecimal				"SwissRe Incurred cost movement"	"#,##0.00"		optional
+
+// Liberty
+@column					liberty_percent							BigDecimal				"Liberty Pct"						"0.00%"			optional
+@column					ly_costs_reconciled_ip					BigDecimal				"Liberty Indemnity paid IP"			"#,##0.00"		optional
+@column					ly_costs_reconciled_td					BigDecimal				"Liberty Indemnity paid TD"			"#,##0.00"		optional
+@column					ly_fees_reconciled_ip					BigDecimal				"Liberty Fees paid IP"				"#,##0.00"		optional
+@column					ly_fees_reconciled_td					BigDecimal				"Liberty Fees paid TD"				"#,##0.00"		optional
+@column					ly_recoveries_ip						BigDecimal				"Liberty Recoveries IP"				"#,##0.00"		optional
+@column					ly_recoveries_td						BigDecimal				"Liberty Recoveries TD"				"#,##0.00"		optional
+@column					ly_outstanding_costs_reserved_td		BigDecimal				"Liberty Indemnity reserve TD"		"#,##0.00"		optional
+@column					ly_outstanding_fees_reserved_td			BigDecimal				"Liberty Fee reserve TD"			"#,##0.00"		optional
+@column					ly_outstanding_recovery_reserves_td		BigDecimal				"Liberty Recovery reserve TD"		"#,##0.00"		optional
+@column					ly_total_td								BigDecimal				"Liberty Incurred cost"				"#,##0.00"		optional
+@column					ly_total_costs_movement					BigDecimal				"Liberty Incurred cost movement"	"#,##0.00"		optional
+
+// Generali
+@column					generali_percent						BigDecimal				"Generali Pct"						"0.00%"			optional
+@column					gi_costs_reconciled_ip					BigDecimal				"Generali Indemnity paid IP"		"#,##0.00"		optional
+@column					gi_costs_reconciled_td					BigDecimal				"Generali Indemnity paid TD"		"#,##0.00"		optional
+@column					gi_fees_reconciled_ip					BigDecimal				"Generali Fees paid IP"				"#,##0.00"		optional
+@column					gi_fees_reconciled_td					BigDecimal				"Generali Fees paid TD"				"#,##0.00"		optional
+@column					gi_recoveries_ip						BigDecimal				"Generali Recoveries IP"			"#,##0.00"		optional
+@column					gi_recoveries_td						BigDecimal				"Generali Recoveries TD"			"#,##0.00"		optional
+@column					gi_outstanding_costs_reserved_td		BigDecimal				"Generali Indemnity reserve TD"		"#,##0.00"		optional
+@column					gi_outstanding_fees_reserved_td			BigDecimal				"Generali Fee reserve TD"			"#,##0.00"		optional
+@column					gi_outstanding_recovery_reserves_td		BigDecimal				"Generali Recovery reserve TD"		"#,##0.00"		optional
+@column					gi_total_td								BigDecimal				"Generali Incurred cost"			"#,##0.00"		optional
+@column					gi_total_costs_movement					BigDecimal				"Generali Incurred cost movement"	"#,##0.00"		optional
+
+
+
+// SwissRe
+@column					swiss_re_percent						BigDecimal				"SwissRe Pct"						"0.00%"			optional #columns.contains("showNIPInsurers")
+@column					sw_costs_reconciled_ip					BigDecimal				"SwissRe Indemnity paid IP"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_costs_reconciled_td					BigDecimal				"SwissRe Indemnity paid TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_fees_reconciled_ip					BigDecimal				"SwissRe Fees paid IP"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_fees_reconciled_td					BigDecimal				"SwissRe Fees paid TD"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_recoveries_ip						BigDecimal				"SwissRe Recoveries IP"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_recoveries_td						BigDecimal				"SwissRe Recoveries TD"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_outstanding_costs_reserved_td		BigDecimal				"SwissRe Indemnity reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_outstanding_fees_reserved_td			BigDecimal				"SwissRe Fee reserve TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_outstanding_recovery_reserves_td		BigDecimal				"SwissRe Recovery reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_total_td								BigDecimal				"SwissRe Incurred cost"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					sw_total_costs_movement					BigDecimal				"SwissRe Incurred cost movement"	"#,##0.00"		optional #columns.contains("showNIPInsurers")
+
+// Liberty
+@column					liberty_percent							BigDecimal				"Liberty Pct"						"0.00%"			optional #columns.contains("showNIPInsurers")
+@column					ly_costs_reconciled_ip					BigDecimal				"Liberty Indemnity paid IP"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_costs_reconciled_td					BigDecimal				"Liberty Indemnity paid TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_fees_reconciled_ip					BigDecimal				"Liberty Fees paid IP"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_fees_reconciled_td					BigDecimal				"Liberty Fees paid TD"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_recoveries_ip						BigDecimal				"Liberty Recoveries IP"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_recoveries_td						BigDecimal				"Liberty Recoveries TD"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_outstanding_costs_reserved_td		BigDecimal				"Liberty Indemnity reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_outstanding_fees_reserved_td			BigDecimal				"Liberty Fee reserve TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_outstanding_recovery_reserves_td		BigDecimal				"Liberty Recovery reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_total_td								BigDecimal				"Liberty Incurred cost"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					ly_total_costs_movement					BigDecimal				"Liberty Incurred cost movement"	"#,##0.00"		optional #columns.contains("showNIPInsurers")
+
+// Generali
+@column					generali_percent						BigDecimal				"Generali Pct"						"0.00%"			optional #columns.contains("showNIPInsurers")
+@column					gi_costs_reconciled_ip					BigDecimal				"Generali Indemnity paid IP"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_costs_reconciled_td					BigDecimal				"Generali Indemnity paid TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_fees_reconciled_ip					BigDecimal				"Generali Fees paid IP"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_fees_reconciled_td					BigDecimal				"Generali Fees paid TD"				"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_recoveries_ip						BigDecimal				"Generali Recoveries IP"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_recoveries_td						BigDecimal				"Generali Recoveries TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_outstanding_costs_reserved_td		BigDecimal				"Generali Indemnity reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_outstanding_fees_reserved_td			BigDecimal				"Generali Fee reserve TD"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_outstanding_recovery_reserves_td		BigDecimal				"Generali Recovery reserve TD"		"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_total_td								BigDecimal				"Generali Incurred cost"			"#,##0.00"		optional #columns.contains("showNIPInsurers")
+@column					gi_total_costs_movement					BigDecimal				"Generali Incurred cost movement"	"#,##0.00"		optional #columns.contains("showNIPInsurers")
+
+
